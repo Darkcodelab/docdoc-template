@@ -1,0 +1,541 @@
+/* General Styling */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #3d73d1;
+}
+
+/* .container {
+  max-width: 1200px;
+  margin: 0 auto;
+} */
+
+.container {
+  padding: 0 1.5em;
+  font-family: "Open Sans", sans-serif;
+}
+
+.menu {
+  display: none;
+  pointer-events: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+/* General Styling */
+
+/*HEADER STYLING*/
+header {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  padding: 1em 0;
+  font-size: 14px;
+}
+
+.brand-name {
+  font-size: 1.5em;
+}
+
+.title-D {
+  color: var(--primary);
+}
+
+.brand-name,
+.contact-info,
+.login {
+  flex: 1;
+  align-self: center;
+}
+
+nav {
+  flex: 4;
+}
+
+.contact-info h3,
+.login * {
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.login {
+  padding: 0.8em 0em;
+  border: 2px solid var(--primary);
+  text-align: center;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+nav ul li {
+  /* margin-right: 6em; */
+  padding: 0.4em 3em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+nav ul li:hover,
+.active {
+  background: var(--primary);
+  color: white;
+}
+
+/*HEADER STYLING*/
+
+/* MAIN STYLING */
+.main-banner {
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  align-items: center;
+  background: rgb(243, 243, 243);
+}
+
+.hero-info {
+  grid-row: 1/2;
+  grid-column: 2/4;
+}
+
+.hero-info h1 {
+  font-size: 2.7em;
+}
+
+.hero-image {
+  width: 320px;
+  grid-column: 5/6;
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 0px 5px rgb(185, 185, 185));
+}
+
+.hero-info p {
+  margin-top: 1em;
+}
+
+.hero-info button {
+  margin-top: 2em;
+  padding: 1em 1em;
+  background: var(--primary);
+  font-size: 16px;
+  color: white;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 50px;
+}
+
+.scroll-down {
+  text-align: center;
+  margin-top: 1em;
+  font-weight: bolder;
+}
+
+.scroll-down b {
+  font-size: 2em;
+  font-weight: bolder;
+}
+
+/* CLINIC&SPEC */
+.clinic-spec {
+  margin-top: 2em;
+}
+
+.heading {
+  text-align: center;
+}
+
+.heading h2 {
+  font-size: 2em;
+  font-weight: 600;
+  color: #232323;
+  margin-bottom: 0.8em;
+}
+
+.heading p {
+  color: rgb(75, 75, 75);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* CLINIC&SPEC */
+
+.box-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 4em 0 0 0;
+  justify-content: space-evenly;
+}
+
+.box {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  text-align: center;
+  width: 200px;
+  justify-content: center;
+}
+
+.image-holder {
+  grid-row: 1/3;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: rgb(255, 255, 255);
+  display: flex;
+  box-shadow: 0 0 30px 1px rgb(214, 214, 214);
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.7em;
+}
+
+.image-holder i {
+  color: var(--primary);
+  font-size: 3rem;
+}
+
+.box h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 1em;
+}
+
+/* CLINIC&SPEC */
+
+.doctors-information {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 4em;
+  margin-bottom: 3em;
+  background: #f3f3f3;
+  padding: 3em 2em;
+  justify-content: center;
+}
+
+.left-box {
+  display: flex;
+  max-width: 900px;
+  justify-content: space-between;
+  padding-right: 32px;
+  line-height: 2em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid lightgrey;
+  flex-wrap: wrap;
+}
+
+.left-box-left {
+  align-self: center;
+  flex: 3;
+}
+.info {
+  flex: 3;
+}
+
+.left-box h2 {
+  font-size: 2em;
+  margin-bottom: 0.3em;
+}
+
+.doctor-copy {
+  color: gray;
+}
+
+.info {
+  text-align: justify;
+}
+
+.info p {
+  margin-bottom: 1em;
+}
+
+.info button,
+.doctorbox button {
+  align-self: flex-start;
+  padding: 1em 0.8em;
+  border: none;
+  outline: none;
+  background: var(--primary);
+  color: white;
+  border-radius: 4px;
+}
+
+.doctor-container {
+  display: flex;
+  height: 100%;
+  max-width: 1000px;
+  justify-content: center;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.doctorbox {
+  display: flex;
+  flex-direction: column;
+  padding: 0.7em;
+  background: white;
+  border-radius: 4px;
+  max-width: 300px;
+  box-shadow: 0 0 10px 0.2px grey;
+  margin: 2em 1em;
+}
+
+.doctorbox img {
+  width: 100%;
+  height: 180px;
+}
+
+.doctorbox h3 {
+  margin-top: 0.7em;
+  font-weight: 600;
+}
+
+.doctorbox h4 {
+  font-weight: normal;
+  font-size: 1em;
+}
+
+.doctorbox p {
+  margin-top: 0.5em;
+  color: grey;
+}
+
+.doctorbox button {
+  align-self: center;
+  padding: 0.8em;
+  margin: 1.3em 0.3em 0.8em;
+  justify-self: flex-end;
+  cursor: pointer;
+  width: 100%;
+  background: inherit;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.buttons button:hover {
+  color: white;
+  background: var(--primary);
+}
+
+.stars i {
+  margin-top: 0.8em;
+  color: gold;
+}
+
+/* MAIN STYLING */
+
+/* FOOTER STYLING */
+
+footer {
+  background: var(--primary);
+  padding: 2em 0.5em;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+}
+
+.footer-contact {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 2em;
+}
+
+.footer-contact div {
+  justify-self: center;
+}
+
+.footer-brand-name {
+  font-size: 3em;
+  margin-top: 0 !important;
+  margin-bottom: 0.6em !important;
+}
+
+.footer-contact div h2 {
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+}
+
+.footer-brand {
+  text-align: center;
+}
+
+.footer-contact div p {
+  font-size: 14px;
+  margin: 0.1em 0;
+}
+
+.footer-contact div ul li {
+  font-size: 14px;
+  margin: 1em 0;
+}
+
+.footer-contact div ul li::before {
+  content: ">>";
+  margin-right: 0.4em;
+  font-weight: bolder;
+}
+
+.footer-rights {
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid white;
+  align-items: center;
+  padding-top: 2em;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1em;
+}
+
+.links p i {
+  margin-right: 1em;
+  font-size: 20px !important;
+}
+
+/* FOOTER STYLING */
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 970px) {
+  .navbar,
+  .contact-info,
+  .login {
+    display: none;
+  }
+  .menu {
+    display: block;
+    font-size: 2.3rem;
+    align-self: center;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .hero-info {
+    /* grid-column: 1/4; */
+    /* padding-left: 2em; */
+  }
+}
+
+@media only screen and (max-width: 938px) {
+  .hero-info {
+    padding: 4rem 0;
+    grid-column: 2/6;
+    z-index: 99;
+  }
+  .main-banner {
+    position: relative;
+    overflow: hidden;
+  }
+  .hero-image {
+    position: absolute;
+    right: -200px;
+  }
+}
+
+@media only screen and (max-width: 614px) {
+  .hero-info {
+    text-align: center;
+    grid-column: 1/7;
+  }
+}
+
+@media only screen and (max-width: 876px) {
+  .left-box {
+    flex-direction: column;
+    padding: 0;
+  }
+  .left-box p:first-child {
+    margin-top: 2em;
+  }
+  .info {
+    margin: 1em 0 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .doctor-copy {
+    text-align: center;
+  }
+
+  .info button {
+    align-self: center;
+  }
+
+  .footer-brand {
+    max-width: 400px;
+  }
+
+  .footer-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .patients ul,
+  .doctors ul,
+  .footer-contact-us p {
+    display: none;
+  }
+  .patients h2,
+  .doctors h2,
+  .footer-contact-us h2 {
+    font-weight: normal;
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 490px) {
+  .footer-rights {
+    flex-direction: column;
+  }
+
+  .doctors-information {
+    padding: 1em 0.3em;
+  }
+
+  .container {
+    padding: 0 0.5em;
+  }
+
+  .doctorbox {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  .box h3 {
+    margin: 0.3em;
+  }
+  .box {
+    margin: 1em 0;
+    border-bottom: 1px solid lightgrey;
+  }
+}
+
+/* MEDIA QUERIES */
